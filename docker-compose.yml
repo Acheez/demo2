@@ -1,0 +1,6 @@
+  services:
+    pdf_microservice:
+      build: ./microservice_pdf
+      container_name: pdf_microservice
+      ports:
+        - "8001:8001"
