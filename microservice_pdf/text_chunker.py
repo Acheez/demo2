@@ -10,5 +10,9 @@ class TextChunker:
             chunk_size=self.chunk_size,
             chunk_overlap=self.chunk_overlap
         )
+        
+    def chunk_text(self, text: str) -> list[str]:
+        """Splits the given text into chunks."""
+        return self._text_splitter.split_text(text)
 
     
