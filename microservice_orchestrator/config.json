@@ -1,0 +1,5 @@
+{
+    "pdf_service_url": "http://pdf_microservice:8001/upload-pdf",
+    "question_service_url": "http://question_microservice:8003/generate-questions"
+  }
+  
