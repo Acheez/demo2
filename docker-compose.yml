@@ -1,6 +1,20 @@
-  services:
-    pdf_microservice:
-      build: ./microservice_pdf
-      container_name: pdf_microservice
-      ports:
-        - "8001:8001"
+services:
+  pdf_microservice:
+    build: ./microservice_pdf
+    container_name: pdf_microservice
+    ports:
+      - "8001:8001"
+
+  question_microservice:
+    build: ./microservice_questions
+    container_name: question_microservice
+    ports:
+      - "8003:8003"
+    env_file: .env
+
+  orchestrator_microservice:
+    build: ./microservice_orchestrator
+    container_name: orchestrator_microservice
+    ports:
+      - "8002:8002"
+    
